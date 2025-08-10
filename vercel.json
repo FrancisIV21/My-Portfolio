@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "portfolio-backend/server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "portfolio-backend/package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "portfolio-backend/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "$1"
+    }
+  ],
+  "functions": {
+    "portfolio-backend/server.js": {
+      "maxDuration": 10
+    }
+  }
+}
