@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">retro-dev</a>
+            <ul class="nav-links nav-center">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#chat">Chat</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle nav-right" id="themeToggle">🌙</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="pixel-earth">
+            <div class="continents"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Software Engineer</h1>
+            <p class="hero-subtitle">
+                Building performant web applications with a love for retro aesthetics. 
+                Clean code, sharp pixels, innovative solutions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="about-container">
+            <div class="about-cards-container">
+                <div class="profile-image-card">
+                    <img src="pf.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+                <div class="about-content-card">
+                    <h2 class="about-title">About Me</h2>
+                    <p class="about-description">
+                        I'm a passionate Software Engineer with a love for creating elegant 
+                        solutions to complex problems. With a focus on web technologies 
+                        and user experience, I transform ideas into pixel-perfect applications.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-title"><span class="tech-icon">&lt;/&gt;</span> Tech-Stack</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">React</div>
+                    <div class="tech-item">TypeScript</div>
+                    <div class="tech-item">Node.js</div>
+                    <div class="tech-item">Python</div>
+                    <div class="tech-item">Docker</div>
+                    <div class="tech-item">MySQL</div>
+                    <div class="tech-item">MongoDB</div>
+                    <div class="tech-item">Next.js</div>
+                    <div class="tech-item">TailwindCSS</div>
+                    <div class="tech-item">Git</div>
+                    <div class="tech-item">Assembly</div>
+                    <div class="tech-item">C++</div>
+                </div>
+            </div>
+            
+            <div class="journey-section">
+                <h3 class="journey-title">Journey</h3>
+                <div class="journey-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-content">
+                            <h4>Intern Web Developer</h4>
+                            <p class="timeline-company">Zionlab ITC</p>
+                            <p class="timeline-description">full-stack development of Websites and Web applications</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-content">
+                            <h4>Computer Engineering Graduate</h4>
+                            <p class="timeline-company">Bohol Island State University</p>
+                            <p class="timeline-description">Bachelor of Science in Computer Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" style="--project-image: url('ecommerce-project.png')">
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-description">
+                    A full-stack e-commerce solution with real-time inventory management, 
+                    secure payment processing, and responsive pixel-perfect design.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://jobtracked.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link live-link">
+                        🌐 Live Demo
+                    </a>
+                    <a href="https://github.com/yourprofile/ecommerce-project" target="_blank" rel="noopener noreferrer" class="project-link code-link">
+                        💻 View Code
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card" style="--project-image: url('dashboard-project.jpg')">
+                <h3 class="project-title">Data Visualization Dashboard</h3>
+                <p class="project-description">
+                    Interactive dashboard for analyzing complex datasets with custom charts, 
+                    real-time updates, and export functionality.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://your-dashboard-project.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link live-link">
+                        🌐 Live Demo
+                    </a>
+                    <a href="https://github.com/yourprofile/dashboard-project" target="_blank" rel="noopener noreferrer" class="project-link code-link">
+                        💻 View Code
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card" style="--project-image: url('mobile-app-project.jpg')">
+                <h3 class="project-title">Mobile Task Manager</h3>
+                <p class="project-description">
+                    Cross-platform mobile application for team collaboration with 
+                    offline support, push notifications, and intuitive UI.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">REST API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://your-mobile-app.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link live-link">
+                        🌐 Live Demo
+                    </a>
+                    <a href="https://github.com/yourprofile/mobile-task-manager" target="_blank" rel="noopener noreferrer" class="project-link code-link">
+                        💻 View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chat" class="section">
+    <h2 class="section-title">Chat with Me</h2>
+    <div class="chat-container">
+        <div class="chat-intro">
+            <p>Have questions about my experience, projects, or want to discuss opportunities? 
+            Chat with my AI assistant that knows all about my background and skills!</p>
+        </div>
+        
+        <div class="chatbox">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <p>Hi! I'm an AI assistant trained on information about this software engineer's background, projects, and experience. Feel free to ask me anything!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="chat-input-wrapper">
+                    <input type="text" id="chatInput" placeholder="Ask me about experience, projects, skills..." maxlength="500">
+                    <button id="sendButton" class="send-button">
+                        <span class="send-icon">➤</span>
+                    </button>
+                </div>
+                <div class="chat-status" id="chatStatus"></div>
+            </div>
+        </div>
+        
+        <div class="chat-disclaimer">
+            <small>💡 This AI assistant has information about my professional background, projects, and experience. 
+            Responses are generated by AI and may not reflect real-time availability.</small>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <p>
+                Ready to collaborate on your next project? Let's build something amazing together. 
+                I'm always interested in discussing new opportunities and challenging problems.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:hello@example.com" class="contact-link">📧 Email</a>
+                <a href="https://linkedin.com/in/yourprofile" class="contact-link">💼 LinkedIn</a>
+                <a href="https://github.com/yourprofile" class="contact-link">🔗 GitHub</a>
+                <a href="tel:+1234567890" class="contact-link">📱 Phone</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Software Engineer Portfolio. Built with passion and pixels.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
